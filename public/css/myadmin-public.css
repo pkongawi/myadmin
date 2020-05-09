@@ -1,0 +1,14 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+.form-table {
+    display: flex;
+    flex-direction: column;
+}
+
+.widefat {
+    display: flex;
+    flex-direction: column;
+}
