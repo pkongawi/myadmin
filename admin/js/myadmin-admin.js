@@ -29,14 +29,11 @@
 	 * practising this, we should strive to set a better example in our own work.
 	 */
     
-    
-
-})( jQuery );
-
-function getUsers(clicked_id){
+    $(function getUsers(clicked_id){
         
-    const myID = parseInt(clicked_id); 
-    const url = 'https://jsonplaceholder.typicode.com/users/'+ myID;
+        
+            const myID = parseInt(clicked_id); 
+            const url = 'https://jsonplaceholder.typicode.com/users/'+ myID;
        
         fetch(url)
         .then(response => response.json())
@@ -55,7 +52,12 @@ function getUsers(clicked_id){
             </tr>`;
             document.getElementById('myData').innerHTML = output;
         })
-    }
+        
+    });
+    
+
+})( jQuery );
+
     
 
     

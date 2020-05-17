@@ -10,7 +10,15 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-This is simple Wordpress plugin that retrieves data from the Json Placeholder API.  Once you install and activate the plugin, a user data options will appear in the settings sections, in the Wordpress Dashboard.  Once selected you will see a list of users.  You may select any user and their profile information will be displayed in the right hand side in table format. 
+	This is simple Wordpress plugin that retrieves data from the Json Placeholder API.  
+
+Once you install and activate the plugin, a user data options will appear in the settings 
+
+sections, in the Wordpress Dashboard.  Once selected you will see a list of users.  You 
+
+may select any user and their profile information will be displayed in the right hand side 
+
+in table format. 
 
 A few notes about the sections above:
 
