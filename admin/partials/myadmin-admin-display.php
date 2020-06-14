@@ -11,18 +11,9 @@
  * @package    Myadmin
  * @subpackage Myadmin/admin/partials
  */
-    $json_feed_url = 'https://jsonplaceholder.typicode.com/users/';
-    $json_feed = wp_remote_get($json_feed_url);
-    $json_results = json_decode($json_feed['body'], true);
-//  var_dump($json_results);
+//retrieving data through the User class stored in the myadmin class
+$data = Users::retrieve();
 ?>
-
-<script>
-    
-        
-
-    
-</script>
 
 
 <!-- This file should primarily consist of HTML with a little bit of PHP. -->
@@ -39,8 +30,8 @@
     <tr>
         <th class="row-title"><?php esc_attr_e( 'Names', 'wp_admin_style' ); ?></th>
     <td>	
-    <?php for( $i = 0; $i < count($json_results); $i++ ) 
-    { echo '<tr valign="top"><td scope="row"><a href="#" class="users"  onclick="getUsers(this.id);"  id="'.$json_results[$i]["id"].'">' . $json_results[$i]["name"] . '</a></td></tr>' ; } ?>
+    <?php for( $i = 0; $i < count($data); $i++ ) 
+    { echo '<tr valign="top"><td scope="row"><a href="javascript:;" class="users"  data-user-id="'.$data[$i]["id"].'">'.$data[$i]["name"].'</a></td></tr>' ; } ?>
     </td>
     </tr>
     </table>
