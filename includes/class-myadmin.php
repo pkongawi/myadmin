@@ -121,6 +121,22 @@ class Myadmin {
 		 * side of the site.
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-myadmin-public.php';
+		
+		/**
+		 * The class responsible for defining all the class admin users
+		 * 
+		 */
+		
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-myadmin-users.php';
+		
+		/**
+		 * The class responsible for the custom end points
+		 * 
+		 */
+		
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-myadmin-end-points.php';
+		
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'templates/users.php';
 
 		$this->loader = new Myadmin_Loader();
 
